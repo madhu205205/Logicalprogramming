@@ -13,9 +13,9 @@
 ##sum of add fucnctions
 
 
-def sum_addfunctions(x, y, z):
-    return x+y+z
+def sum_addfunctions(x, y, z):#10,20,30
+    return x+y+z#10,20,50
 
 
 add = sum_addfunctions(x=10, y=20, z=50)
-print(add)
+print(add)#80
