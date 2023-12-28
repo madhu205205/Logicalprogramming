@@ -35,13 +35,18 @@
 #############
 ##leap year
 
-def leap_year(year):
-    # year = 20000
-    if (year % 400 == 0) and (year % 100 != 0) or year % 4 == 0:
-        print("leap year")
-    else:
-        print("not leap year")
+# def leap_year(year):
+#     # year = 20000
+#     if (year % 400 == 0) and (year % 100 != 0) or year % 4 == 0:
+#         print("leap year")
+#     else:
+#         print("not leap year")
+#
+#
+# year = int(input("enter year:"))
+# print(leap_year(year))
+###other method
+import calendar
+year = 2000
+print(calendar.isleap(year))
 
-
-year = int(input("enter year:"))
-print(leap_year(year))
