@@ -12,10 +12,23 @@
 ###########################
 ##sum of add fucnctions
 
+# def sum_addfunctions(x, y, z):#10,20,30
+#     return x+y+z#10,20,50
+#
+#
+# add = sum_addfunctions(x=10, y=20, z=50)
+# print(add)#80
+##################
+####hankerank exmple
+n = int(input())
 
-def sum_addfunctions(x, y, z):#10,20,30
-    return x+y+z#10,20,50
-
-
-add = sum_addfunctions(x=10, y=20, z=50)
-print(add)#80
+if n >= 1 and n <= 100:
+    if n % 2 != 0:
+        print("weird")
+    else:
+        if n >= 2 and n <= 5:
+            print("not weird")
+        elif n >= 6 and n <= 20:
+            print("weird")
+        else:
+            print("not weird")
