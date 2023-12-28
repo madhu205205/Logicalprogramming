@@ -1,17 +1,21 @@
-# even or odd
-# def function_odd(n):
-# i = int(input("enter the value:"))
-# if i%2==0:
-#     print("even")
-# else:
-#     print("odd")
+## even or odd
 
-def even_odd(i):
+# def even_odd(i):#10
+#     if i % 2 == 0:#10
+#         return "even"
+#     else:
+#         return "odd"
+#
+#
+# data = even_odd(10)# even
+# print(data)#even
+###########################
+##sum of add fucnctions
 
-    if i % 2 == 0:
-        return "even"
-    else:
-        return "odd"
 
-data = even_odd(10)
-print(data)
+def sum_addfunctions(x, y, z):
+    return x+y+z
+
+
+add = sum_addfunctions(x=10, y=20, z=50)
+print(add)
