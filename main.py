@@ -20,15 +20,28 @@
 # print(add)#80
 ##################
 ####hankerank exmple
-n = int(input())
+# n = int(input())
+#
+# if n >= 1 and n <= 100:
+#     if n % 2 != 0:
+#         print("weird")
+#     else:
+#         if n >= 2 and n <= 5:
+#             print("not weird")
+#         elif n >= 6 and n <= 20:
+#             print("weird")
+#         else:
+#             print("not weird")
+#############
+##leap year
 
-if n >= 1 and n <= 100:
-    if n % 2 != 0:
-        print("weird")
+def leap_year(year):
+    # year = 20000
+    if (year % 400 == 0) and (year % 100 != 0) or year % 4 == 0:
+        print("leap year")
     else:
-        if n >= 2 and n <= 5:
-            print("not weird")
-        elif n >= 6 and n <= 20:
-            print("weird")
-        else:
-            print("not weird")
+        print("not leap year")
+
+
+year = int(input("enter year:"))
+print(leap_year(year))
