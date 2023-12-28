@@ -46,7 +46,27 @@
 # year = int(input("enter year:"))
 # print(leap_year(year))
 ###other method
-import calendar
-year = 2000
-print(calendar.isleap(year))
+# import calendar
+# year = 2000
+# print(calendar.isleap(year))
 
+###########
+##e - commers coding
+def ifcondtions(n):
+    # n = int(input())
+    if n >= 30 and n <= 100:
+        if n >= 30 and n <= 50:
+            print("d")
+
+        elif n >= 51 and n <= 60:
+            print("c")
+        elif n >= 61 and n <= 80:
+            print("b")
+        else:
+            print("a")
+    else:
+        print("both are condtion is false")
+
+
+mm = ifcondtions(n=100)
+print(mm)
