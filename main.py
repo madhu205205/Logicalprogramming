@@ -52,21 +52,29 @@
 
 ###########
 ##e - commers coding
-def ifcondtions(n):
-    # n = int(input())
-    if n >= 30 and n <= 100:
-        if n >= 30 and n <= 50:
-            print("d")
+# def ifcondtions(n):
+#     # n = int(input())
+#     if n >= 30 and n <= 100:
+#         if n >= 30 and n <= 50:
+#             print("d")
+#
+#         elif n >= 51 and n <= 60:
+#             print("c")
+#         elif n >= 61 and n <= 80:
+#             print("b")
+#         else:
+#             print("a")
+#     else:
+#         print("both are condtion is false")
+#
+#
+# mm = ifcondtions(n=100)
+# print(mm)
+#####
+## haker rank cupes code
+def coups(n):
+    print(n + n // 6)
 
-        elif n >= 51 and n <= 60:
-            print("c")
-        elif n >= 61 and n <= 80:
-            print("b")
-        else:
-            print("a")
-    else:
-        print("both are condtion is false")
 
-
-mm = ifcondtions(n=100)
+mm = coups(n=6)
 print(mm)
