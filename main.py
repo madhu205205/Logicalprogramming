@@ -72,9 +72,21 @@
 # print(mm)
 #####
 ## haker rank cupes code
-def coups(n):
-    print(n + n // 6)
+# def coups(n):
+#     print(n + n // 6)##1 add
+#
+#
+# mm = coups(n=6)
+# print(mm)
+
+#####
+###digit given number
+def numbers(n):
+    while n != 0:
+        d = n % 10
+        print(d, end='')
+        n = n // 10
 
 
-mm = coups(n=6)
-print(mm)
+obj = numbers(n=145)
+print(obj)
