@@ -98,11 +98,19 @@
 #     print(i,end='')
 
 ###
-# interger to string convert
-num = 10
-print("the type of varible:", type(num))
-converted_num = str(num)
-print("the type of after converted:", type(converted_num))
+
+
+#### interger to string function
+def fun(num):
+    print("the type of varible:", type(num))
+    converted_num = str(num)
+    print("the type of after converted:", type(converted_num))
+
+hh = fun(num=10)
+print(hh)
+
+
+# print(sum(int(i)for i in list(input())))
 
 
 
