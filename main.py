@@ -81,12 +81,26 @@
 
 #####
 ###digit given number
-def numbers(n):
-    while n != 0:
-        d = n % 10
-        print(d, end='')
-        n = n // 10
+# def numbers(n):
+#     while n != 0:
+#         d = n % 10
+#         print(d, end='')
+#         n = n // 10
+#
+#
+# obj = numbers(n=145)
+# print(obj)
+###
+##digit number from the reverse
+##reversed string
+
+for i in input()[::-1]:
+    print(i,end='')
 
 
-obj = numbers(n=145)
-print(obj)
+
+
+
+# str = "madhusudhanr"
+# print("".join(reversed(str)))
+# print(str[::-1])
