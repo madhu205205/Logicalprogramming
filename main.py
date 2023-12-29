@@ -94,10 +94,15 @@
 ##digit number from the reverse
 ##reversed string
 
-for i in input()[::-1]:
-    print(i,end='')
+# for i in input()[::-1]:
+#     print(i,end='')
 
-
+###
+# interger to string convert
+num = 10
+print("the type of varible:", type(num))
+converted_num = str(num)
+print("the type of after converted:", type(converted_num))
 
 
 
