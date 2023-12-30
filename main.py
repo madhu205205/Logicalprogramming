@@ -101,16 +101,29 @@
 
 
 #### interger to string function
-def fun(num):
-    print("the type of varible:", type(num))
-    converted_num = str(num)
-    print("the type of after converted:", type(converted_num))
+# def fun(num):
+#     print("the type of varible:", type(num))
+#     converted_num = str(num)
+#     print("the type of after converted:", type(converted_num))
+#
+#
+# hh = fun(num=10)
+# print(hh)
 
-hh = fun(num=10)
-print(hh)
+## print(sum(int(i)for i in list(input())))
+
+##################
+##odd number
+
+def odd_number(n):#10
+    if n % 3 == 0:
+        print("even number")
+    else:
+        print("odd number")
 
 
-# print(sum(int(i)for i in list(input())))
+data = odd_number(n=10)
+print(data)#odd number
 
 
 
