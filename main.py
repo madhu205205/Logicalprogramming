@@ -149,11 +149,26 @@
 # print(sum([int(i) for i in list(input()) if i in '369']))
 
 
-def divisble(n):
-    for i in range(0, n):
-        if i % 15 == 0:
-            print(i, end='')
+# def divisble(n):#50
+#     for i in range(0, n):#50
+#         if i % 15 == 0:
+#             print(i, end='')
+#
+#
+# data = divisble(n=50)
+# print(data)
+###########
+###string charters reverse
+#mothod 1
+s= "wellcome"
+print(s[::-1])
+
+# #mothod 2
+
+s= "madhu"
+print("".join(reversed(s)))
+##method 3
+s = input("enter name:")
+print(s[::-1])
 
 
-data = divisble(n=50)
-print(data)
