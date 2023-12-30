@@ -129,25 +129,31 @@
 ##prime number
 # print(sum([int(i) for i in list(input()) if i in '2357']))
 
-def prime_number(n):
-    if n > 2:
-        for i in range(2, int(n / 2) + 1):
-            if n % i == 0:
-                print(n, "not prime number")
-                break
-            else:
-                print(n, "prime number")
-    else:
-        print(n, "not prime number")
+# def prime_number(n):
+#     if n > 2:
+#         for i in range(2, int(n / 2) + 1):
+#             if n % i == 0:
+#                 print(n, "not prime number")
+#                 break
+#             else:
+#                 print(n, "prime number")
+#     else:
+#         print(n, "not prime number")
+#
+#
+# data = prime_number(15)
+# print(data)
+
+#####
+##divisbale by 3,5
+# print(sum([int(i) for i in list(input()) if i in '369']))
 
 
-data = prime_number(15)
+def divisble(n):
+    for i in range(0, n):
+        if i % 15 == 0:
+            print(i, end='')
+
+
+data = divisble(n=50)
 print(data)
-
-
-
-
-
-# str = "madhusudhanr"
-# print("".join(reversed(str)))
-# print(str[::-1])
