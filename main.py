@@ -114,16 +114,37 @@
 
 ##################
 ##odd number
+#
+# def odd_number(n):#10
+#     if n % 3 == 0:
+#         print("even number")
+#     else:
+#         print("odd number")
+#
+#
+# data = odd_number(n=10)
+# print(data)#odd number
 
-def odd_number(n):#10
-    if n % 3 == 0:
-        print("even number")
+############
+##prime number
+# print(sum([int(i) for i in list(input()) if i in '2357']))
+
+def prime_number(n):
+    if n > 2:
+        for i in range(2, int(n / 2) + 1):
+            if n % i == 0:
+                print(n, "not prime number")
+                break
+            else:
+                print(n, "prime number")
     else:
-        print("odd number")
+        print(n, "not prime number")
 
 
-data = odd_number(n=10)
-print(data)#odd number
+data = prime_number(15)
+print(data)
+
+
 
 
 
