@@ -160,15 +160,21 @@
 ###########
 ###string charters reverse
 #mothod 1
-s= "wellcome"
-print(s[::-1])
+# s= "wellcome"
+# print(s[::-1])
 
 # #mothod 2
 
-s= "madhu"
-print("".join(reversed(s)))
+# s= "madhu"
+# print("".join(reversed(s)))
 ##method 3
-s = input("enter name:")
-print(s[::-1])
+# s = input("enter name:")
+# print(s[::-1])
 
-
+#####
+##palindrom
+string = input("enter letter:")
+if (string == string[::-1]):
+    print("is palindro ")
+else:
+    print("is palindro invalid")
