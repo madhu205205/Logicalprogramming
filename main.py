@@ -173,8 +173,283 @@
 
 #####
 ##palindrom
-string = input("enter letter:")
-if (string == string[::-1]):
-    print("is palindro ")
-else:
-    print("is palindro invalid")
+# string = input("enter letter:")
+# if (string == string[::-1]):
+#     print("is palindro ")
+# else:
+#     print("is palindro invalid")
+
+#other method
+# s = input()
+# print("valid" if s==s[::-1] else "invalid")
+
+
+############
+#excption interview
+# try:
+#     a = 10
+#     b = 33
+#     print(a + b)
+#    # raise Exception
+# except Exception:
+#     print("hello")
+# else:
+#     print("hiii")
+# finally:
+#     print("good morning")
+###############
+# t = (1, 2, 3, 4)
+# tuple = t + (5,)
+# print(tuple)
+################
+# s="   wellcome to python   "
+# print(len(s))
+# print(s)
+####
+# str = "madhusudhanr"
+# print("".join(reversed(str)))
+# print(str[::-1])
+# x = ""
+# for i in str:
+#     x = i + x
+# print(x)
+###########
+
+# str = "hello"
+# str_rever = ""
+# for i in str.split():
+#     str_rever = str_rever + i[::-1] + ""
+# print(str_rever)
+#
+# str_rever = ""
+# for i in str.split():
+#     str_rever = i + "" + str_rever
+# print(str_rever)
+
+#######
+##substring
+# str = "wellcome to python"
+# str_rever = "wellcome to python"
+# print(str in str_rever)
+#
+# str = "hellow madhu"
+# sub_str = "hellow madhu"
+# print(sub_str in str)
+#
+# splited_str = str.split()
+# count = splited_str.count(sub_str)
+# print(count)
+# print("index of ",str.find(sub_str))
+
+############
+##sort method
+# x=[10,30,20,1,3,2]
+# x.sort()
+# print(x)
+
+#
+#reverse
+# x=[10,20,10,30,20,1,2,3]
+# x.reverse()
+# print(x)
+
+##
+# import copy
+# x = [1,2,3,4,[10,20,30]]
+# y = copy.copy(x)
+# x[4][1]=100
+# print(y) # [1, 2, 3, 4, [10, 100, 30]]
+# Y = copy.deepcopy(x)
+# # X[4][1] = 100
+# print(y)
+
+
+# from collections import Counter
+# z = ['madhu', 'bali', 'redddy', 'madhu', 'redddy', 'bali']
+# print(Counter(z))
+
+# list = ['a', 'b', 'c', 'a', 'b', 'c']
+#
+#
+# def func(list):
+#     dict = {}
+#     for i in list:
+#         if i not in dict.keys():
+#             dict[i] = list.count(i)
+#     return dict
+
+
+
+# print(func(list))
+
+
+
+
+##############
+# s=input("enter name:")
+# print(s[::-1])
+
+# s=input("enter name:")
+# print("".join(reversed(s)))
+##########
+# num = 10
+# print("the type of varible:", type(num))
+# converted_num = str(num)
+# print("the type of after converted:", type(converted_num))
+# #########
+# def decor(fun):
+#     def inner(name):
+#         if name == "madhu":
+#             print("hell")
+#         else:
+#             print(fun)
+#
+#     return inner
+#
+#
+# @decor
+# def wish(name):
+#     print("hello", name)
+#
+#
+# wish("madhu")
+###############
+##factorial
+# fact = 1
+# n = 5
+# while n > 1:
+#     fact = fact * n
+#     n = n - 1
+#     print(fact)
+#other method
+# import math
+# print(math.factorial(5))
+#other method
+# def fact(n):
+#     num = 1
+#     for i in range(1, n + 1):
+#         num = num * i
+#     return num
+#
+#
+# print(fact(5))
+
+
+############
+##fabinosis
+# a = 10
+# b = 0
+# c = 1
+# for z in range(0, a):
+#     if (z <= 1):
+#         temp = z
+#     else:
+#         temp = b + c
+#         b = c
+#         c = temp
+#         print(temp)
+
+
+##
+# def fabi(n):
+#     a, b = 0, 1
+#     for i in range(n):
+#         yield a
+#         a, b = b, a + b
+#         # print(a, b)
+#
+#
+# print(list(fabi(int(input("enter value:")))))
+
+
+###
+# x = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+#
+#
+# def func_par(arr, pair):
+#     count = 0
+#     for i in arr:
+#         for j in arr:
+#             if i + j == pair:
+#                 count = count + 1
+#     return count
+#
+#
+# print(func_par(x, 7))
+
+
+##list compression
+# xx = [1, 1, 1, 1, 2, 2, 3, 3, 4, 4]
+# print([x ** 2 if x % 2 == 0 else 0 for x in xx])
+#
+# print([x**2 for x in xx if x%2==0])
+
+
+#intervie quations dict
+# from collections import OrderedDict
+#
+# test_dict = {'madhu': 4, 'reddy': 2, 'bali': 5}
+#
+# res = OrderedDict(reversed(list(test_dict.items())))
+#
+# # printing result
+# print("The reversed dict : " + str(res))
+#
+#output ('bali',5),('reddy',2)('madhu',4)
+
+##how to find the get frequency of following string in python
+# text = """Yesterday I went fishing. I don't fish that often"""
+# data = text.split()
+# dictt = {}
+# for i in data:
+#     if i in dictt.keys():
+#         dictt[i] = dictt[i] + 1
+#     else:
+#         dictt[i] = 1
+# print(dictt)
+
+##write a read a string and covert all even number index value into upper case
+
+# x "madhusudhan"
+# out put
+#MaDhUsUdHaN
+#012345678910
+
+# def myfunc(st):#madhusudh
+#     newst = ''#MaDhUsUdH
+#     for index, alpha in enumerate(st):
+#         if index % 2 == 0:#MaDhUsUdH
+#             newst = newst + alpha.upper()
+#         else:
+#             newst = newst + alpha.lower()
+#     return newst
+#
+#
+# print(myfunc("madhusudh"))
+###################################
+#even charter i upper case in index
+# def convert_even_index_to_uppercase(input_string):
+#     result = ""
+#
+#     for index, char in enumerate(input_string):
+#         if index % 2 == 0:
+#             result += char.upper()
+#         else:
+#             result += char
+#
+#     return result
+#
+#
+# user_input = convert_even_index_to_uppercase(input("Enter a string:"))
+# print("Result:", user_input)
+
+###############
+# hello = {'name':'madhu','emp':'reddy','salary':'55666'}
+#
+# for i in enumerate(hello):
+#     print(i)
+###############
+
+
+
+
