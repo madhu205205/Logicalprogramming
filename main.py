@@ -449,7 +449,13 @@
 # for i in enumerate(hello):
 #     print(i)
 ###############
+##regx
+import re
 
 
+def fun(s1, s2):
+    print(re.sub("[aeiou]", s2, s1))
 
 
+dd = fun(s1="madhu", s2="bali")
+print(dd)
