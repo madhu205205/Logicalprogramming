@@ -179,6 +179,17 @@
 # else:
 #     print("is palindro invalid")
 
+
+# def str_pal(str):
+#     if str == str[::-1]:
+#         return True
+#     else:
+#         return False
+#
+#
+# print(str_pal(str='madhu'))
+
+
 #other method
 # s = input()
 # print("valid" if s==s[::-1] else "invalid")
@@ -450,12 +461,95 @@
 #     print(i)
 ###############
 ##regx
-import re
+# import re
+# def fun(s1, s2):
+#     print(re.sub("[aeiou]", s2, s1))
+#
+#
+# dd = fun(s1="madhu", s2="bali")
+# print(dd)
+##
 
 
-def fun(s1, s2):
-    print(re.sub("[aeiou]", s2, s1))
 
 
-dd = fun(s1="madhu", s2="bali")
-print(dd)
+# def fun(n,s):
+#     # s = ''
+#     if n== 1:
+#         print("hello",s)
+#     else:
+#         print("bye",s)
+#
+# mm = int(input(fun(n=1,s=1)))
+# print(mm)
+###############
+# def fun(c):
+#     s = ''
+#     for i in s:
+#         if i.isdigit():
+#             c=c+1
+#     print("true" if c==5 else "false")
+#
+#
+# mm = fun(c=0)
+# print(mm)
+
+##prime number
+
+# def func(num):
+#     x = []
+#     for j in range(1, num):  # 5
+#         for i in range(2, j):  # 2,5
+#             if j % i == 0:  # 5%2
+#                 break
+#         else:
+#             x.append(j)
+#     return x
+#
+#
+# print(func(50))
+############
+##interview quation string chareter count
+# s = "madhumadhu"
+# d = {}
+# for i in s:
+#     if i in d.keys():
+#         d[i] = d[i]+1
+#     else:
+#         d[i] = 1
+# print(d)
+
+# s1 = input()
+# s2 = input()
+#
+# print("true" if s2 in s1+s1 else "false")
+
+###########
+# def string(s1, s2):
+#     if s1 + s2 == 0:
+#         print("true")
+#     else:
+#         print("false0")
+#
+#
+# print(string(s1="reddy", s2="reddy"))
+###########
+##missing numbers
+
+
+# def missing(s):
+#     for i in range(97, 128):
+#         if chr(i) not in s:
+#             print(chr(i), end='')
+#
+#
+# print(missing(s=input("madhu")))
+
+def find_missing(lst):
+    return [i for x, y in zip(lst, lst[1:])
+            for i in range(x + 1, y) if y - x > 1]
+
+
+# Driver code
+lst = [1, 2, 4, 6, 7, 9, 10]
+print(find_missing(lst))
