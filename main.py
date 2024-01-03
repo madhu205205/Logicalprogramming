@@ -537,19 +537,55 @@
 ##missing numbers
 
 
-# def missing(s):
-#     for i in range(97, 128):
-#         if chr(i) not in s:
-#             print(chr(i), end='')
+# def find_missing(lst):
+#     return [i for x, y in zip(lst, lst[1:])
+#             for i in range(x + 1, y) if y - x > 1]
 #
 #
-# print(missing(s=input("madhu")))
+# # Driver code
+# lst = [1, 2, 4, 6, 7, 9, 10]
+# print(find_missing(lst))
 
-def find_missing(lst):
-    return [i for x, y in zip(lst, lst[1:])
-            for i in range(x + 1, y) if y - x > 1]
+##############
 
 
-# Driver code
-lst = [1, 2, 4, 6, 7, 9, 10]
-print(find_missing(lst))
+# def fun(n, m):
+#     l = []
+#     if n < m:
+#         for i in range(n, m + 1):
+#             l.append(i)
+#         for i in l:
+#             print(i, end='')
+#     else:
+#         print(n)
+#
+#
+# mm = fun(n=int(input(11)), m=int(input(13)))
+# print(mm)
+#########
+# list = [2, 3, 4, 5, 6, 7]
+#
+
+# for x in list:
+#     if (x % 2 == 1 and x > 4):
+#         print(x)
+#         break
+#
+
+# list = [1,1,2,3,5,8,13]
+# print(list[list[4]])
+
+# for i in range(10):
+#     if not i % 2 == 0:
+#         print(i+1)
+
+###bigger number
+def bigger_number(n1, n2):
+    if n1 > n2:
+        print("n1 is the bigger number:", n1)
+    else:
+        print("n2 is the bigger number:", n2)
+
+
+mm = bigger_number(n1=2, n2=20)
+print(mm)
